@@ -1,0 +1,103 @@
+{
+  "ct_ddpg_current": {
+    "return_mean": -0.12193785541485078,
+    "return_std": 0.08105219920767129,
+    "return_se": 0.004052609960383565,
+    "return_ci90": 0.006665950191956568,
+    "action_mean": 0.2282099634822673,
+    "action_std": 0.02034209451225865,
+    "action_min": 0.18366150866893152,
+    "action_max": 0.3621955298418354,
+    "jumps_mean": 13.2275,
+    "intensity_mean": 2.696065350184833,
+    "episodes": 400
+  },
+  "ct_ddpg_filters": {
+    "return_mean": -0.10555031832806534,
+    "return_std": 0.05965331870359079,
+    "return_se": 0.0029826659351795395,
+    "return_ci90": 0.00490604888146467,
+    "action_mean": 0.235193564132317,
+    "action_std": 0.0833026953828763,
+    "action_min": 0.08912796192044271,
+    "action_max": 0.7444201860259422,
+    "jumps_mean": 12.91,
+    "intensity_mean": 2.6337282832742597,
+    "episodes": 400
+  },
+  "dgm_hjb_oracle": {
+    "return_mean": -0.1036525053463815,
+    "return_std": 0.05634927610211399,
+    "return_se": 0.002817463805105699,
+    "return_ci90": 0.004634315558632605,
+    "action_mean": 0.22907150379180913,
+    "jumps_mean": 12.9725,
+    "intensity_mean": 2.6411784308085338,
+    "episodes": 400
+  },
+  "sac_current": {
+    "return_mean": -0.10928541678003828,
+    "return_std": 0.060456234238218325,
+    "return_se": 0.0030228117119109163,
+    "return_ci90": 0.004972082807928059,
+    "action_mean": 0.2293285774630308,
+    "action_std": 0.1063247544663539,
+    "action_min": 0.030874580144882202,
+    "action_max": 0.8844724893569946,
+    "jumps_mean": 13.0925,
+    "intensity_mean": 2.674431354245263,
+    "episodes": 400
+  },
+  "sac_filters": {
+    "return_mean": -0.10649382557051665,
+    "return_std": 0.05564484944309126,
+    "return_se": 0.002782242472154563,
+    "return_ci90": 0.0045763816213818635,
+    "action_mean": 0.24040042664557695,
+    "action_std": 0.09907012997290023,
+    "action_min": 0.044024646282196045,
+    "action_max": 0.7170146703720093,
+    "jumps_mean": 12.9375,
+    "intensity_mean": 2.63049690924521,
+    "episodes": 400
+  },
+  "ddpg_current": {
+    "return_mean": -0.12663361330867953,
+    "return_std": 0.061634072972596085,
+    "return_se": 0.0030817036486298043,
+    "return_ci90": 0.005068951423638319,
+    "action_mean": 0.24512754207909104,
+    "action_std": 0.13597743748642296,
+    "action_min": 0.04798489809036255,
+    "action_max": 0.953441858291626,
+    "jumps_mean": 12.855,
+    "intensity_mean": 2.612658049170394,
+    "episodes": 400
+  },
+  "ddpg_filters": {
+    "return_mean": -0.11029956943447322,
+    "return_std": 0.06101726539654006,
+    "return_se": 0.0030508632698270028,
+    "return_ci90": 0.005018223514707974,
+    "action_mean": 0.2273151255595684,
+    "action_std": 0.10237802216344075,
+    "action_min": 0.04512229561805725,
+    "action_max": 0.797433078289032,
+    "jumps_mean": 13.1375,
+    "intensity_mean": 2.650887121574235,
+    "episodes": 400
+  },
+  "constant_0.26": {
+    "return_mean": -0.13142672528055713,
+    "return_std": 0.07257812402301521,
+    "return_se": 0.0036289062011507604,
+    "return_ci90": 0.005969019526829517,
+    "action_mean": 0.25999999999999934,
+    "action_std": 1.6653345369377348e-16,
+    "action_min": 0.26,
+    "action_max": 0.26,
+    "jumps_mean": 12.9925,
+    "intensity_mean": 2.646831160917667,
+    "episodes": 400
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "diagnosis": "The legacy filtered checkpoint restored its timestep-zero current-state warm start after noisy non-common validation comparisons.",
+  "legacy_filter_input_weight_norm": 0.0,
+  "selected_filter_input_weight_norm": 0.9756603241,
+  "legacy_fixed_tx_action_std": 0.0000000596,
+  "selected_fixed_tx_action_std": 0.0164348669,
+  "feature_mode": "lifted",
+  "feature_note": "Observed filter levels plus adjacent-rate finite differences; no exact Erlang phases, true decay, or fitted weights.",
+  "holdout_episodes_per_seed": 800,
+  "holdouts": [
+    {"seed": 999, "current_cost": 0.1105802473, "filtered_cost": 0.1074944826},
+    {"seed": 20260813, "current_cost": 0.1129182093, "filtered_cost": 0.1082835999},
+    {"seed": 7300, "current_cost": 0.1126277854, "filtered_cost": 0.1086348806}
+  ]
+}

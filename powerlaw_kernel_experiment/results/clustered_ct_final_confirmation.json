@@ -1,0 +1,86 @@
+{
+  "999": {
+    "current": {
+      "return_mean": -1.6646659540855941,
+      "return_std": 1.089830420627741,
+      "return_se": 0.038531324038463155,
+      "return_ci90": 0.06337838809590857,
+      "action_mean": 0.27397022752687905,
+      "action_std": 0.11384172834762236,
+      "action_min": 0.1516390164109959,
+      "action_max": 0.9231270766890888,
+      "jumps_mean": 5.44875,
+      "intensity_mean": 0.6809161659434808,
+      "episodes": 800
+    },
+    "filtered": {
+      "return_mean": -1.5869638355549356,
+      "return_std": 1.0432546888877976,
+      "return_se": 0.03688462325086118,
+      "return_ci90": 0.06066980633291762,
+      "action_mean": 0.24422586076254887,
+      "action_std": 0.1496841607428543,
+      "action_min": 0.1168716159470302,
+      "action_max": 0.9982520049765071,
+      "jumps_mean": 5.35125,
+      "intensity_mean": 0.6721033485689324,
+      "episodes": 800
+    },
+    "static_030": {
+      "return_mean": -1.931619949716597,
+      "return_std": 1.4266657969206216,
+      "return_se": 0.05044025297447407,
+      "return_ci90": 0.08296683304941345,
+      "action_mean": 0.29999999999999805,
+      "action_std": 1.6653345369377348e-16,
+      "action_min": 0.3,
+      "action_max": 0.3,
+      "jumps_mean": 5.80375,
+      "intensity_mean": 0.7226827571306262,
+      "episodes": 800
+    },
+    "filter_gain": 0.04667730383982086
+  },
+  "20260813": {
+    "current": {
+      "return_mean": -1.6247292573284904,
+      "return_std": 1.0966664399828692,
+      "return_se": 0.038773013820579835,
+      "return_ci90": 0.0637759324106203,
+      "action_mean": 0.27181229712797383,
+      "action_std": 0.11296962038766103,
+      "action_min": 0.14724681186609165,
+      "action_max": 0.9608559065385573,
+      "jumps_mean": 5.3475,
+      "intensity_mean": 0.6794321533719454,
+      "episodes": 800
+    },
+    "filtered": {
+      "return_mean": -1.5657359062754395,
+      "return_std": 1.0762443941733677,
+      "return_se": 0.03805098546669979,
+      "return_ci90": 0.06258830145397891,
+      "action_mean": 0.2422180919621735,
+      "action_std": 0.14947723325417578,
+      "action_min": 0.1133757336571501,
+      "action_max": 0.997301036929215,
+      "jumps_mean": 5.2825,
+      "intensity_mean": 0.6708037306177564,
+      "episodes": 800
+    },
+    "static_030": {
+      "return_mean": -1.8919535469492508,
+      "return_std": 1.3456880272585798,
+      "return_se": 0.04757725647180447,
+      "return_ci90": 0.078257622868048,
+      "action_mean": 0.29999999999999805,
+      "action_std": 1.6653345369377348e-16,
+      "action_min": 0.3,
+      "action_max": 0.3,
+      "jumps_mean": 5.68375,
+      "intensity_mean": 0.7198548485331977,
+      "episodes": 800
+    },
+    "filter_gain": 0.036309650230619044
+  }
+}

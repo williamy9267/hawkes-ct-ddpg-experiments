@@ -1,0 +1,73 @@
+{
+  "signature": {
+    "agent": {
+      "actor_batch_size": 256,
+      "actor_x_skip": 6.0,
+      "actor_z_skip": 0.5,
+      "batch_size": 128,
+      "grad_clip": 10.0,
+      "hidden": [
+        48,
+        48
+      ],
+      "initial_action": 0.3,
+      "lr_actor": 2e-05,
+      "lr_critic": 0.0008,
+      "segment_len": 50,
+      "tau": 0.01,
+      "terminal_penalty": 5.0
+    },
+    "environment": {
+      "action_half_saturation": 0.35,
+      "action_intensity_sensitivity": -0.08,
+      "base_intensity": 2.05,
+      "baseline_max": 6.0,
+      "baseline_min": 1e-06,
+      "beta": 0.02,
+      "control_cost": 0.18,
+      "control_drift_strength": 0.72,
+      "control_effect_strength": 1.25,
+      "control_volatility_strength": 0.08,
+      "decay": 1.3,
+      "diffusion": 0.05,
+      "drift_constant": 0.02,
+      "drift_reversion": 0.45,
+      "dt": 0.02,
+      "excitation": 1.25,
+      "filter_decays": [
+        0.325,
+        0.65,
+        0.975,
+        1.3,
+        1.625,
+        1.95,
+        2.275,
+        2.6
+      ],
+      "horizon": 5.0,
+      "jump_size": 0.1,
+      "jump_size_action_strength": -0.015,
+      "jump_size_max": 0.25,
+      "jump_size_min": 0.0001,
+      "jump_size_x_strength": 0.015,
+      "state_cost": 0.8,
+      "state_intensity_sensitivity": 0.1,
+      "terminal_x_cost": 0.6,
+      "true_filter_index": 3,
+      "volatility_x_strength": 0.015,
+      "x0": 0.0,
+      "x_scale": 2.0,
+      "z0": 0.0,
+      "z_scale": 8.0
+    },
+    "training": {
+      "ct_episodes": 220,
+      "ct_validation_seed": 2718,
+      "eval_episodes": 160,
+      "eval_every": 20,
+      "seed": 11,
+      "updates_per_episode": 10,
+      "warmup_episodes": 25
+    }
+  }
+}

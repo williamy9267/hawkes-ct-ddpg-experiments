@@ -1,0 +1,118 @@
+{
+  "signature": {
+    "environment": {
+      "action_half_saturation": 0.35,
+      "action_intensity_sensitivity": -0.08,
+      "base_intensity": 2.05,
+      "baseline_max": 6.0,
+      "baseline_min": 1e-06,
+      "beta": 0.02,
+      "control_cost": 0.18,
+      "control_drift_strength": 0.72,
+      "control_effect_strength": 1.25,
+      "control_volatility_strength": 0.08,
+      "decay": 1.3,
+      "diffusion": 0.05,
+      "drift_constant": 0.02,
+      "drift_reversion": 0.45,
+      "dt": 0.02,
+      "excitation": 1.25,
+      "filter_decays": [
+        0.325,
+        0.65,
+        0.975,
+        1.3,
+        1.625,
+        1.95,
+        2.275,
+        2.6
+      ],
+      "horizon": 5.0,
+      "jump_size": 0.1,
+      "jump_size_action_strength": -0.015,
+      "jump_size_max": 0.25,
+      "jump_size_min": 0.0001,
+      "jump_size_x_strength": 0.015,
+      "state_cost": 0.8,
+      "state_intensity_sensitivity": 0.1,
+      "terminal_x_cost": 0.6,
+      "true_filter_index": 3,
+      "volatility_x_strength": 0.015,
+      "x0": 0.0,
+      "x_scale": 2.0,
+      "z0": 0.0,
+      "z_scale": 8.0
+    },
+    "actions": [
+      0.36,
+      0.37,
+      0.38,
+      0.39,
+      0.4,
+      0.41,
+      0.42
+    ],
+    "seed": 1731,
+    "episodes": 1200,
+    "projection_step": 0.01,
+    "method": "local_quadratic_profile_projected_to_grid"
+  },
+  "profile": [
+    {
+      "action": 0.36,
+      "cost": 0.3426218161776295,
+      "cost_ci90": 0.01750109884153397,
+      "jumps_mean": 14.339166666666667,
+      "intensity_mean": 2.865005953216072
+    },
+    {
+      "action": 0.37,
+      "cost": 0.3400946390582897,
+      "cost_ci90": 0.014854877573440605,
+      "jumps_mean": 14.1675,
+      "intensity_mean": 2.8337300493137247
+    },
+    {
+      "action": 0.38,
+      "cost": 0.33267131043033116,
+      "cost_ci90": 0.013075414233617641,
+      "jumps_mean": 14.030833333333334,
+      "intensity_mean": 2.800530266313546
+    },
+    {
+      "action": 0.39,
+      "cost": 0.33903077625297917,
+      "cost_ci90": 0.013832624742387747,
+      "jumps_mean": 13.896666666666667,
+      "intensity_mean": 2.7793273389025943
+    },
+    {
+      "action": 0.4,
+      "cost": 0.3327381530358048,
+      "cost_ci90": 0.01040871191690583,
+      "jumps_mean": 13.760833333333334,
+      "intensity_mean": 2.7482836932746015
+    },
+    {
+      "action": 0.41,
+      "cost": 0.3413945494418815,
+      "cost_ci90": 0.011000136867212407,
+      "jumps_mean": 13.656666666666666,
+      "intensity_mean": 2.7291183381233033
+    },
+    {
+      "action": 0.42,
+      "cost": 0.3502155168319638,
+      "cost_ci90": 0.00929653914757816,
+      "jumps_mean": 13.541666666666666,
+      "intensity_mean": 2.704739025058758
+    }
+  ],
+  "quadratic_coefficients": [
+    13.313710671146286,
+    -10.2938094472953,
+    2.324068630128056
+  ],
+  "continuous_minimizer": 0.38658679392831596,
+  "selected_action": 0.39
+}

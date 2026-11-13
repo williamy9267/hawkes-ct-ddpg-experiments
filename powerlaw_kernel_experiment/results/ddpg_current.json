@@ -1,0 +1,222 @@
+{
+    "name":  "ddpg_current",
+    "algorithm":  "ddpg",
+    "observation_mode":  "current",
+    "environment":  {
+                        "horizon":  8.0,
+                        "dt":  0.02,
+                        "beta":  0.02,
+                        "x0":  0.0,
+                        "z0":  0.0,
+                        "kernel_a":  0.12,
+                        "kernel_b":  0.8,
+                        "filter_betas":  [
+                                             1.0,
+                                             2.0,
+                                             3.0,
+                                             4.0,
+                                             5.0,
+                                             6.0,
+                                             7.0,
+                                             8.0,
+                                             9.0,
+                                             10.0,
+                                             11.0,
+                                             12.0,
+                                             13.0,
+                                             14.0,
+                                             15.0,
+                                             16.0,
+                                             17.0,
+                                             18.0,
+                                             19.0,
+                                             20.0
+                                         ],
+                        "mixture_weights":  null,
+                        "mu0":  0.6,
+                        "mu_x":  0.002,
+                        "mu_a":  -0.002,
+                        "excitation":  0.99,
+                        "control_effect_strength":  1.08,
+                        "action_half_saturation":  0.1,
+                        "baseline_min":  1E-06,
+                        "baseline_max":  5.0,
+                        "drift_constant":  0.0,
+                        "drift_reversion":  1.0,
+                        "control_drift_strength":  0.02,
+                        "diffusion":  0.03,
+                        "volatility_x_strength":  0.002,
+                        "control_volatility_strength":  0.005,
+                        "jump_size":  0.5,
+                        "jump_size_x_strength":  0.002,
+                        "jump_size_action_strength":  -0.05,
+                        "jump_size_min":  0.0001,
+                        "jump_size_max":  0.9,
+                        "jump_mark_positive_probability":  1.0,
+                        "state_cost":  1.0,
+                        "control_cost":  0.5,
+                        "terminal_x_cost":  0.5,
+                        "x_scale":  1.0,
+                        "z_scale":  1.0
+                    },
+    "elapsed_seconds":  257.6045917000156,
+    "config":  {
+                   "total_timesteps":  120000,
+                   "history_len":  24,
+                   "feature_mode":  "matched",
+                   "n_envs":  4,
+                   "ddpg_n_envs":  4,
+                   "sac_learning_rate":  5E-05,
+                   "ddpg_learning_rate":  5E-05,
+                   "ppo_learning_rate":  0.0003,
+                   "sac_batch_size":  1024,
+                   "ddpg_batch_size":  1024,
+                   "sac_gradient_steps":  1,
+                   "sac_n_steps":  1,
+                   "ddpg_gradient_steps":  1,
+                   "sac_tau":  0.003,
+                   "ddpg_tau":  0.003,
+                   "sac_ent_coef":  "auto_0.02",
+                   "gamma":  null,
+                   "reward_scale":  10.0,
+                   "learning_starts":  15000,
+                   "ddpg_action_noise_sigma":  0.05,
+                   "ddpg_initial_action":  0.3,
+                   "policy_hidden":  [
+                                         128,
+                                         128
+                                     ],
+                   "optimizer_weight_decay":  0.0001,
+                   "warm_start_critic":  true,
+                   "warm_start_memory_noise":  0.0,
+                   "ppo_n_steps":  256,
+                   "ppo_batch_size":  256,
+                   "ppo_n_epochs":  10,
+                   "ppo_ent_coef":  0.0,
+                   "ppo_log_std_init":  -1.2,
+                   "ppo_gae_lambda":  0.97,
+                   "ppo_clip_range":  0.2,
+                   "ppo_target_kl":  0.05,
+                   "ppo_vf_coef":  0.7,
+                   "ppo_normalize_reward":  false,
+                   "ppo_clip_reward":  10.0,
+                   "eval_freq":  10000,
+                   "eval_episodes":  128,
+                   "eval_n_envs":  8,
+                   "early_stop_patience":  0,
+                   "early_stop_min_evals":  1,
+                   "restore_best":  true,
+                   "seed":  77,
+                   "device":  "cpu",
+                   "ppo_device":  "cpu",
+                   "torch_num_threads":  2
+               },
+    "training_history":  [
+                             {
+                                 "timesteps":  10000,
+                                 "scaled_return_mean":  -20.2689325859375,
+                                 "scaled_return_std":  14.6216618828165,
+                                 "cost_mean":  2.02689325859375
+                             },
+                             {
+                                 "timesteps":  20000,
+                                 "scaled_return_mean":  -22.044235601562498,
+                                 "scaled_return_std":  15.28117970435501,
+                                 "cost_mean":  2.2044235601562496
+                             },
+                             {
+                                 "timesteps":  30000,
+                                 "scaled_return_mean":  -19.2517813984375,
+                                 "scaled_return_std":  11.855273762190672,
+                                 "cost_mean":  1.9251781398437502
+                             },
+                             {
+                                 "timesteps":  40000,
+                                 "scaled_return_mean":  -19.1462423984375,
+                                 "scaled_return_std":  11.486375493321422,
+                                 "cost_mean":  1.91462423984375
+                             },
+                             {
+                                 "timesteps":  50000,
+                                 "scaled_return_mean":  -18.6333549453125,
+                                 "scaled_return_std":  11.813330833653916,
+                                 "cost_mean":  1.8633354945312501
+                             },
+                             {
+                                 "timesteps":  60000,
+                                 "scaled_return_mean":  -18.643191093749998,
+                                 "scaled_return_std":  12.423692345872245,
+                                 "cost_mean":  1.8643191093749998
+                             },
+                             {
+                                 "timesteps":  70000,
+                                 "scaled_return_mean":  -18.9264541015625,
+                                 "scaled_return_std":  12.41451183868635,
+                                 "cost_mean":  1.8926454101562498
+                             },
+                             {
+                                 "timesteps":  80000,
+                                 "scaled_return_mean":  -18.738303609375002,
+                                 "scaled_return_std":  12.187576360394953,
+                                 "cost_mean":  1.8738303609375002
+                             },
+                             {
+                                 "timesteps":  90000,
+                                 "scaled_return_mean":  -18.8062381328125,
+                                 "scaled_return_std":  12.220574244489425,
+                                 "cost_mean":  1.8806238132812498
+                             },
+                             {
+                                 "timesteps":  100000,
+                                 "scaled_return_mean":  -18.7778617578125,
+                                 "scaled_return_std":  12.2390647907932,
+                                 "cost_mean":  1.87778617578125
+                             },
+                             {
+                                 "timesteps":  110000,
+                                 "scaled_return_mean":  -18.854581859374996,
+                                 "scaled_return_std":  12.400690852651781,
+                                 "cost_mean":  1.8854581859374995
+                             },
+                             {
+                                 "timesteps":  120000,
+                                 "scaled_return_mean":  -19.032109585937498,
+                                 "scaled_return_std":  12.52339996864591,
+                                 "cost_mean":  1.9032109585937498
+                             }
+                         ],
+    "evaluation":  {
+                       "return_mean":  -1.8513953798812088,
+                       "return_std":  1.2566410556077687,
+                       "return_se":  0.06283205278038843,
+                       "return_ci90":  0.10334952990462824,
+                       "action_mean":  0.3068581846162677,
+                       "action_std":  0.15739782577399278,
+                       "action_min":  0.017483562231063843,
+                       "action_max":  0.9999629259109497,
+                       "jumps_mean":  5.5825,
+                       "intensity_mean":  0.6798362927797561,
+                       "episodes":  400
+                   },
+    "selection_protocol":  "Common-random validation seed 8100; selected checkpoint then checked on three untouched 800-path seeds.",
+    "independent_holdout":  [
+                                {
+                                    "seed":  999,
+                                    "episodes":  800,
+                                    "cost_mean":  1.7669471921173761,
+                                    "ci90":  0.064422890925826357
+                                },
+                                {
+                                    "seed":  20260813,
+                                    "episodes":  800,
+                                    "cost_mean":  1.7274567438722175,
+                                    "ci90":  0.065620962478606049
+                                },
+                                {
+                                    "seed":  7300,
+                                    "episodes":  800,
+                                    "cost_mean":  1.7413749015912299,
+                                    "ci90":  0.0637510030753227
+                                }
+                            ]
+}

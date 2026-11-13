@@ -1,0 +1,257 @@
+{
+    "name":  "sac_filters",
+    "algorithm":  "sac",
+    "observation_mode":  "filters",
+    "environment":  {
+                        "horizon":  8.0,
+                        "dt":  0.02,
+                        "beta":  0.02,
+                        "x0":  0.0,
+                        "z0":  0.0,
+                        "kernel_a":  0.12,
+                        "kernel_b":  0.8,
+                        "filter_betas":  [
+                                             1.0,
+                                             2.0,
+                                             3.0,
+                                             4.0,
+                                             5.0,
+                                             6.0,
+                                             7.0,
+                                             8.0,
+                                             9.0,
+                                             10.0,
+                                             11.0,
+                                             12.0,
+                                             13.0,
+                                             14.0,
+                                             15.0,
+                                             16.0,
+                                             17.0,
+                                             18.0,
+                                             19.0,
+                                             20.0
+                                         ],
+                        "mixture_weights":  null,
+                        "mu0":  0.6,
+                        "mu_x":  0.002,
+                        "mu_a":  -0.002,
+                        "excitation":  0.99,
+                        "control_effect_strength":  1.08,
+                        "action_half_saturation":  0.1,
+                        "baseline_min":  1E-06,
+                        "baseline_max":  5.0,
+                        "drift_constant":  0.0,
+                        "drift_reversion":  1.0,
+                        "control_drift_strength":  0.02,
+                        "diffusion":  0.03,
+                        "volatility_x_strength":  0.002,
+                        "control_volatility_strength":  0.005,
+                        "jump_size":  0.5,
+                        "jump_size_x_strength":  0.002,
+                        "jump_size_action_strength":  -0.05,
+                        "jump_size_min":  0.0001,
+                        "jump_size_max":  0.9,
+                        "jump_mark_positive_probability":  1.0,
+                        "state_cost":  1.0,
+                        "control_cost":  0.5,
+                        "terminal_x_cost":  0.5,
+                        "x_scale":  1.0,
+                        "z_scale":  1.0
+                    },
+    "elapsed_seconds":  767.9117182999908,
+    "config":  {
+                   "total_timesteps":  200000,
+                   "history_len":  24,
+                   "feature_mode":  "matched",
+                   "n_envs":  4,
+                   "ddpg_n_envs":  4,
+                   "sac_learning_rate":  0.0001,
+                   "ddpg_learning_rate":  0.0001,
+                   "ppo_learning_rate":  0.0003,
+                   "sac_batch_size":  512,
+                   "ddpg_batch_size":  512,
+                   "sac_gradient_steps":  2,
+                   "ddpg_gradient_steps":  2,
+                   "sac_tau":  0.005,
+                   "ddpg_tau":  0.005,
+                   "sac_ent_coef":  "auto_0.005",
+                   "gamma":  null,
+                   "reward_scale":  25.0,
+                   "learning_starts":  5000,
+                   "ddpg_action_noise_sigma":  0.08,
+                   "policy_hidden":  [
+                                         128,
+                                         128
+                                     ],
+                   "optimizer_weight_decay":  1E-05,
+                   "ppo_n_steps":  256,
+                   "ppo_batch_size":  256,
+                   "ppo_n_epochs":  10,
+                   "ppo_ent_coef":  0.0,
+                   "ppo_log_std_init":  -1.2,
+                   "ppo_gae_lambda":  0.97,
+                   "ppo_clip_range":  0.2,
+                   "ppo_target_kl":  0.05,
+                   "ppo_vf_coef":  0.7,
+                   "ppo_normalize_reward":  false,
+                   "ppo_clip_reward":  10.0,
+                   "eval_freq":  10000,
+                   "eval_episodes":  96,
+                   "eval_n_envs":  8,
+                   "early_stop_patience":  0,
+                   "early_stop_min_evals":  1,
+                   "restore_best":  true,
+                   "seed":  77,
+                   "device":  "cpu",
+                   "ppo_device":  "cpu",
+                   "torch_num_threads":  2
+               },
+    "training_history":  [
+                             {
+                                 "timesteps":  0,
+                                 "scaled_return_mean":  -46.022331354166674,
+                                 "scaled_return_std":  29.319367467336765,
+                                 "cost_mean":  1.840893254166667
+                             },
+                             {
+                                 "timesteps":  10000,
+                                 "scaled_return_mean":  -48.36949211458333,
+                                 "scaled_return_std":  31.879037707293474,
+                                 "cost_mean":  1.9347796845833332
+                             },
+                             {
+                                 "timesteps":  20000,
+                                 "scaled_return_mean":  -47.58965009375,
+                                 "scaled_return_std":  29.2536980862826,
+                                 "cost_mean":  1.90358600375
+                             },
+                             {
+                                 "timesteps":  30000,
+                                 "scaled_return_mean":  -46.91162004166667,
+                                 "scaled_return_std":  29.736975273066918,
+                                 "cost_mean":  1.876464801666667
+                             },
+                             {
+                                 "timesteps":  40000,
+                                 "scaled_return_mean":  -46.678149,
+                                 "scaled_return_std":  27.362492000721126,
+                                 "cost_mean":  1.8671259599999999
+                             },
+                             {
+                                 "timesteps":  50000,
+                                 "scaled_return_mean":  -44.72499936458333,
+                                 "scaled_return_std":  27.388257977942907,
+                                 "cost_mean":  1.7889999745833334
+                             },
+                             {
+                                 "timesteps":  60000,
+                                 "scaled_return_mean":  -45.09345058333334,
+                                 "scaled_return_std":  27.466782944031984,
+                                 "cost_mean":  1.8037380233333338
+                             },
+                             {
+                                 "timesteps":  70000,
+                                 "scaled_return_mean":  -44.494615718750005,
+                                 "scaled_return_std":  27.383759416242107,
+                                 "cost_mean":  1.77978462875
+                             },
+                             {
+                                 "timesteps":  80000,
+                                 "scaled_return_mean":  -44.285021927083335,
+                                 "scaled_return_std":  27.663322557383136,
+                                 "cost_mean":  1.7714008770833334
+                             },
+                             {
+                                 "timesteps":  90000,
+                                 "scaled_return_mean":  -45.552906,
+                                 "scaled_return_std":  28.909562163640363,
+                                 "cost_mean":  1.82211624
+                             },
+                             {
+                                 "timesteps":  100000,
+                                 "scaled_return_mean":  -45.53305275,
+                                 "scaled_return_std":  28.470824239759008,
+                                 "cost_mean":  1.82132211
+                             },
+                             {
+                                 "timesteps":  110000,
+                                 "scaled_return_mean":  -44.16790842708334,
+                                 "scaled_return_std":  26.503408132638327,
+                                 "cost_mean":  1.7667163370833336
+                             },
+                             {
+                                 "timesteps":  120000,
+                                 "scaled_return_mean":  -47.393529,
+                                 "scaled_return_std":  26.42626582538577,
+                                 "cost_mean":  1.89574116
+                             },
+                             {
+                                 "timesteps":  130000,
+                                 "scaled_return_mean":  -46.14297425,
+                                 "scaled_return_std":  26.53369832092926,
+                                 "cost_mean":  1.84571897
+                             },
+                             {
+                                 "timesteps":  140000,
+                                 "scaled_return_mean":  -46.2784146875,
+                                 "scaled_return_std":  28.672533599687466,
+                                 "cost_mean":  1.8511365875
+                             },
+                             {
+                                 "timesteps":  150000,
+                                 "scaled_return_mean":  -45.503206687500004,
+                                 "scaled_return_std":  25.80638204657066,
+                                 "cost_mean":  1.8201282675000001
+                             },
+                             {
+                                 "timesteps":  160000,
+                                 "scaled_return_mean":  -45.52980236458334,
+                                 "scaled_return_std":  25.9705659107991,
+                                 "cost_mean":  1.8211920945833335
+                             },
+                             {
+                                 "timesteps":  170000,
+                                 "scaled_return_mean":  -46.06659964583333,
+                                 "scaled_return_std":  25.98843830374642,
+                                 "cost_mean":  1.8426639858333331
+                             },
+                             {
+                                 "timesteps":  180000,
+                                 "scaled_return_mean":  -45.120492812500004,
+                                 "scaled_return_std":  26.148201941624553,
+                                 "cost_mean":  1.8048197125
+                             },
+                             {
+                                 "timesteps":  190000,
+                                 "scaled_return_mean":  -46.35487354166667,
+                                 "scaled_return_std":  27.16251668743359,
+                                 "cost_mean":  1.8541949416666668
+                             },
+                             {
+                                 "timesteps":  200000,
+                                 "scaled_return_mean":  -46.029696989583336,
+                                 "scaled_return_std":  27.107792861573287,
+                                 "cost_mean":  1.8411878795833334
+                             }
+                         ],
+    "evaluation":  {
+                       "return_mean":  -1.7843334015473078,
+                       "return_std":  1.253175653972691,
+                       "return_se":  0.06265878269863455,
+                       "return_ci90":  0.1030645259822132,
+                       "action_mean":  0.29276107598934326,
+                       "action_std":  0.15811651530805593,
+                       "action_min":  0.007725447416305542,
+                       "action_max":  0.9994096755981445,
+                       "jumps_mean":  5.5075,
+                       "intensity_mean":  0.6768972782254887,
+                       "episodes":  400
+                   },
+    "holdout_costs":  {
+                          "seed999":  1.7056171936,
+                          "seed20260813":  1.6978345491,
+                          "seed7300":  1.7164730246
+                      },
+    "selection_note":  "Common-random-number validation; full budget; improves on current SAC on three independent 800-path blocks."
+}

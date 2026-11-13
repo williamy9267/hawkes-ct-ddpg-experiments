@@ -1,0 +1,100 @@
+{
+  "signature": {
+    "environment": {
+      "action_half_saturation": 0.1,
+      "baseline_max": 5.0,
+      "baseline_min": 1e-06,
+      "beta": 0.02,
+      "control_cost": 0.5,
+      "control_drift_strength": 0.02,
+      "control_effect_strength": 1.08,
+      "control_volatility_strength": 0.005,
+      "diffusion": 0.03,
+      "drift_constant": 0.0,
+      "drift_reversion": 1.0,
+      "dt": 0.02,
+      "excitation": 0.99,
+      "filter_betas": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0
+      ],
+      "horizon": 8.0,
+      "jump_mark_positive_probability": 1.0,
+      "jump_size": 0.5,
+      "jump_size_action_strength": -0.05,
+      "jump_size_max": 0.9,
+      "jump_size_min": 0.0001,
+      "jump_size_x_strength": 0.002,
+      "kernel_a": 0.12,
+      "kernel_b": 0.8,
+      "mixture_weights": null,
+      "mu0": 0.6,
+      "mu_a": -0.002,
+      "mu_x": 0.002,
+      "state_cost": 1.0,
+      "terminal_x_cost": 0.5,
+      "volatility_x_strength": 0.002,
+      "x0": 0.0,
+      "x_scale": 1.0,
+      "z0": 0.0,
+      "z_scale": 1.0
+    },
+    "actions": [
+      0.32,
+      0.33,
+      0.34
+    ],
+    "seed": 1731,
+    "episodes": 1600,
+    "projection_step": 0.01,
+    "method": "local_quadratic_profile_projected_to_grid"
+  },
+  "profile": [
+    {
+      "action": 0.32,
+      "cost": 1.9380987124654598,
+      "cost_ci90": 0.05537503069969367,
+      "jumps_mean": 5.7425,
+      "intensity_mean": 0.7130533798930062
+    },
+    {
+      "action": 0.33,
+      "cost": 1.9364253047540338,
+      "cost_ci90": 0.054522114438008584,
+      "jumps_mean": 5.706875,
+      "intensity_mean": 0.7085031731174177
+    },
+    {
+      "action": 0.34,
+      "cost": 1.9358527701294486,
+      "cost_ci90": 0.05311609249070104,
+      "jumps_mean": 5.675,
+      "intensity_mean": 0.704290389521007
+    }
+  ],
+  "quadratic_coefficients": [
+    5.504365434201928,
+    -3.7451783033739026,
+    2.5729087490828317
+  ],
+  "continuous_minimizer": 0.34,
+  "selected_action": 0.34
+}
